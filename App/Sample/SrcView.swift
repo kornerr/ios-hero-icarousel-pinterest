@@ -10,6 +10,20 @@ class SrcView: UIView
     {
         super.awakeFromNib()
     }
+    
+    @IBOutlet var sheetView: UIView!
 
+    // MARK: - SHOW
+
+    var showReport: SimpleCallback?
+    
+    @IBAction func show(_ sender: Any)
+    {
+        if let report = showReport
+        {
+            report()
+        }
+    }
+    
 }
 

@@ -11,5 +11,18 @@ class DstView: UIView
         super.awakeFromNib()
     }
 
+    @IBOutlet var sheetView: UIView!
+
+    // MARK: - HIDE
+
+    var hideReport: SimpleCallback?
+    
+    @IBAction func hide(_ sender: Any)
+    {
+        if let report = hideReport
+        {
+            report()
+        }
+    }
 }
 
