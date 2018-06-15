@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AAE6809BFBE70B7BC8A7760 /* Pods_HeroAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C809010E713140412B1B78 /* Pods_HeroAnimations.framework */; };
 		9F118B1E20BC54D800C0DC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */; };
 		9F118B2520BC54D900C0DC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B2420BC54D900C0DC20 /* Assets.xcassets */; };
 		9F118B2820BC54D900C0DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B2620BC54D900C0DC20 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64306CE682EEDC8E0A72AEC3 /* Pods-HeroAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations.debug.xcconfig"; sourceTree = "<group>"; };
 		9F118B1A20BC54D800C0DC20 /* HeroAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F118B2420BC54D900C0DC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		9F118B4520BC5CA300C0DC20 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9FCD90E820D40DE80090DD71 /* DstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DstView.swift; sourceTree = "<group>"; };
 		9FCD90E920D40DE80090DD71 /* DstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DstView.xib; sourceTree = "<group>"; };
+		A9C809010E713140412B1B78 /* Pods_HeroAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62600F8100D882D0DEA604A /* Pods-HeroAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,18 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAE6809BFBE70B7BC8A7760 /* Pods_HeroAnimations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D6ABF6057A3703C218C49F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C809010E713140412B1B78 /* Pods_HeroAnimations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		954466DD05C2D92236276AA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64306CE682EEDC8E0A72AEC3 /* Pods-HeroAnimations.debug.xcconfig */,
+				B62600F8100D882D0DEA604A /* Pods-HeroAnimations.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F118B1120BC54D800C0DC20 = {
 			isa = PBXGroup;
 			children = (
 				9F118B3C20BC58E400C0DC20 /* External */,
 				9F118B1C20BC54D800C0DC20 /* App */,
 				9F118B1B20BC54D800C0DC20 /* Products */,
+				954466DD05C2D92236276AA7 /* Pods */,
+				3D6ABF6057A3703C218C49F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "HeroAnimations" */;
 			buildPhases = (
+				EEDFA6D6B0363A8571DABED4 /* [CP] Check Pods Manifest.lock */,
 				9F118B1620BC54D800C0DC20 /* Sources */,
 				9F118B1720BC54D800C0DC20 /* Frameworks */,
 				9F118B1820BC54D800C0DC20 /* Resources */,
+				2CFC9F9FD34DA5D96C764AD6 /* [CP] Embed Pods Frameworks */,
+				CFAF2AD9F1FF6C471F3B24AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,6 +201,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CFC9F9FD34DA5D96C764AD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFAF2AD9F1FF6C471F3B24AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEDFA6D6B0363A8571DABED4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeroAnimations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F118B1620BC54D800C0DC20 /* Sources */ = {
@@ -322,15 +403,13 @@
 		};
 		9F118B2D20BC54D900C0DC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64306CE682EEDC8E0A72AEC3 /* Pods-HeroAnimations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.HeroAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -340,15 +419,13 @@
 		};
 		9F118B2E20BC54D900C0DC20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62600F8100D882D0DEA604A /* Pods-HeroAnimations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.HeroAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
