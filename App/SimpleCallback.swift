@@ -1,0 +1,3 @@
+
+typealias SimpleCallback = () -> Void
+
