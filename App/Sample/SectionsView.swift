@@ -41,6 +41,7 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
         // We don't expect products to be updated,
         // so we simply assign a new batch of views.
 
+        /*
         let height = self.frame.size.height
         let geom = CGRect(x: 0, y: 0, width: ITEM_WIDTH, height: height)
 
@@ -54,6 +55,7 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
             //self.loadProduct(id: productId, for: productView)
             self.carouselItems.append(itemView)
         }
+        */
         // Display new views.
         self.carouselView.reloadData()
     }
@@ -62,7 +64,7 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
     
     @IBOutlet private var carouselView: iCarousel!
 
-    private var carouselItems = [SectionsItemView]()
+    //private var carouselItems = [SectionsItemView]()
 
     private func setupCarousel()
     {
@@ -74,7 +76,7 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
     
     func numberOfItems(in carousel: iCarousel) -> Int
     {
-        return self.carouselItems.count
+        return self.items.count
     }
 
     func carousel(
@@ -83,7 +85,23 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
         reusing view: UIView?
     ) -> UIView
     {
-        return self.carouselItems[index]
+
+        // Reuse view.
+        if let view = view
+        {
+            return view
+        }
+        // Create new view.
+        else
+        {
+            let height = self.frame.size.height
+            let geom = CGRect(x: 0, y: 0, width: ITEM_WIDTH, height: height)
+            //var itemView: SectionsItemView! = UIView.loadFromNib()
+            var itemView = UIView()
+            itemView.backgroundColor = .red
+            itemView.frame = geom
+            return itemView
+        }
     }
 
     /*
