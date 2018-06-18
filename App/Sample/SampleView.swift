@@ -12,5 +12,7 @@ class SampleView: UIView
         super.awakeFromNib()
     }
     
+    @IBOutlet var sectionsContainerView: UIView!
+    
 }
 
