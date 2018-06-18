@@ -12,10 +12,24 @@ class SampleCoordinator
 
     init()
     {
+        //self.setupHeroAnimation()
         self.setupSample()
     }
 
     // MARK: - SAMPLE
+
+    private var sampleView: SampleView!
+
+    private func setupSample()
+    {
+        self.sampleView = UIView.loadFromNib()
+        let vc = UIViewControllerTemplate(mainView: self.sampleView)
+        vc.title = NSLocalizedString("Sample.Title", comment: "")
+
+        self.rootVC = vc
+    }
+
+    // MARK: - HERO ANIMATION
 
     private var srcView: SrcView!
     private var srcVC: UIViewController!
@@ -23,7 +37,7 @@ class SampleCoordinator
     private var dstView: DstView!
     private var dstVC: UIViewController!
 
-    private func setupSample()
+    private func setupHeroAnimation()
     {
         // Source.
         self.srcView = UIView.loadFromNib()

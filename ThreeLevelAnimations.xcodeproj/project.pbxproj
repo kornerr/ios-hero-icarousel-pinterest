@@ -20,6 +20,8 @@
 		9F118B4320BC58F200C0DC20 /* UITableViewCellTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B3F20BC58F100C0DC20 /* UITableViewCellTemplate.swift */; };
 		9F118B4420BC58F200C0DC20 /* UIView+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B4020BC58F200C0DC20 /* UIView+Embed.swift */; };
 		9F118B4620BC5CA300C0DC20 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B4520BC5CA300C0DC20 /* Localizable.strings */; };
+		9FCD435720D7E4D5002F108D /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD435520D7E4D5002F108D /* SampleView.xib */; };
+		9FCD435820D7E4D5002F108D /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435620D7E4D5002F108D /* SampleView.swift */; };
 		9FCD90EA20D40DE80090DD71 /* DstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD90E820D40DE80090DD71 /* DstView.swift */; };
 		9FCD90EB20D40DE80090DD71 /* DstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD90E920D40DE80090DD71 /* DstView.xib */; };
 		ACBD88F6407C37855903CE93 /* Pods_ThreeLevelAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */; };
@@ -42,6 +44,8 @@
 		9F118B3F20BC58F100C0DC20 /* UITableViewCellTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellTemplate.swift; sourceTree = "<group>"; };
 		9F118B4020BC58F200C0DC20 /* UIView+Embed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Embed.swift"; sourceTree = "<group>"; };
 		9F118B4520BC5CA300C0DC20 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9FCD435520D7E4D5002F108D /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
+		9FCD435620D7E4D5002F108D /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		9FCD90E820D40DE80090DD71 /* DstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DstView.swift; sourceTree = "<group>"; };
 		9FCD90E920D40DE80090DD71 /* DstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DstView.xib; sourceTree = "<group>"; };
 		A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeLevelAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				9F118B3020BC57FB00C0DC20 /* SampleCoordinator.swift */,
+				9FCD435620D7E4D5002F108D /* SampleView.swift */,
+				9FCD435520D7E4D5002F108D /* SampleView.xib */,
 				9F118B3920BC58BD00C0DC20 /* SrcView.swift */,
 				9F118B3820BC58BD00C0DC20 /* SrcView.xib */,
 				9FCD90E820D40DE80090DD71 /* DstView.swift */,
@@ -204,6 +210,7 @@
 				9F118B4620BC5CA300C0DC20 /* Localizable.strings in Resources */,
 				9F118B3A20BC58BD00C0DC20 /* SrcView.xib in Resources */,
 				9F118B2820BC54D900C0DC20 /* LaunchScreen.storyboard in Resources */,
+				9FCD435720D7E4D5002F108D /* SampleView.xib in Resources */,
 				9F118B2520BC54D900C0DC20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCD435820D7E4D5002F108D /* SampleView.swift in Sources */,
 				9F118B4420BC58F200C0DC20 /* UIView+Embed.swift in Sources */,
 				9F118B3B20BC58BD00C0DC20 /* SrcView.swift in Sources */,
 				9FCD90EA20D40DE80090DD71 /* DstView.swift in Sources */,
@@ -419,7 +427,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.ThreeLevelAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -435,7 +446,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.ThreeLevelAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
