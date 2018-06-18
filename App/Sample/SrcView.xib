@@ -19,19 +19,19 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mac-Xu-oig">
-                            <rect key="frame" x="8" y="548" width="304" height="30"/>
+                            <rect key="frame" x="8" y="546" width="320" height="30"/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="1Dk-NH-oSj"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                    <integer key="value" value="10"/>
+                                    <integer key="value" value="8"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlU-Fk-2Oz">
-                            <rect key="frame" x="20" y="269" width="280" height="30"/>
+                            <rect key="frame" x="20" y="100" width="280" height="30"/>
                             <state key="normal" title="Show"/>
                             <connections>
                                 <action selector="show:" destination="iN0-l3-epB" eventType="touchUpInside" id="EzB-gf-xHF"/>
@@ -41,10 +41,10 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Mac-Xu-oig" firstAttribute="leading" secondItem="vZl-SL-XP5" secondAttribute="leading" constant="8" id="64e-rT-fRL"/>
-                        <constraint firstAttribute="bottom" secondItem="Mac-Xu-oig" secondAttribute="bottom" constant="-10" id="8za-Jd-kJm"/>
-                        <constraint firstItem="wlU-Fk-2Oz" firstAttribute="centerY" secondItem="vZl-SL-XP5" secondAttribute="centerY" id="Yxz-LN-5lI"/>
+                        <constraint firstAttribute="bottom" secondItem="Mac-Xu-oig" secondAttribute="bottom" constant="-8" id="8za-Jd-kJm"/>
+                        <constraint firstItem="wlU-Fk-2Oz" firstAttribute="top" secondItem="vZl-SL-XP5" secondAttribute="top" constant="100" id="bx8-bL-1ad"/>
                         <constraint firstItem="wlU-Fk-2Oz" firstAttribute="leading" secondItem="vZl-SL-XP5" secondAttribute="leading" constant="20" id="d1i-G6-Pvw"/>
-                        <constraint firstAttribute="trailing" secondItem="Mac-Xu-oig" secondAttribute="trailing" constant="8" id="rMj-b0-h9f"/>
+                        <constraint firstAttribute="trailing" secondItem="Mac-Xu-oig" secondAttribute="trailing" constant="-8" id="rMj-b0-h9f"/>
                         <constraint firstAttribute="trailing" secondItem="wlU-Fk-2Oz" secondAttribute="trailing" constant="20" id="yLF-X3-yMg"/>
                     </constraints>
                 </view>
