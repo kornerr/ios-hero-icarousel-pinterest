@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AAE6809BFBE70B7BC8A7760 /* Pods_HeroAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C809010E713140412B1B78 /* Pods_HeroAnimations.framework */; };
+		6AAE6809BFBE70B7BC8A7760 /* Pods_ThreeLevelAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */; };
 		9F118B1E20BC54D800C0DC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */; };
 		9F118B2520BC54D900C0DC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B2420BC54D900C0DC20 /* Assets.xcassets */; };
 		9F118B2820BC54D900C0DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B2620BC54D900C0DC20 /* LaunchScreen.storyboard */; };
@@ -22,11 +22,13 @@
 		9F118B4620BC5CA300C0DC20 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B4520BC5CA300C0DC20 /* Localizable.strings */; };
 		9FCD90EA20D40DE80090DD71 /* DstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD90E820D40DE80090DD71 /* DstView.swift */; };
 		9FCD90EB20D40DE80090DD71 /* DstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD90E920D40DE80090DD71 /* DstView.xib */; };
+		ACBD88F6407C37855903CE93 /* Pods_ThreeLevelAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		64306CE682EEDC8E0A72AEC3 /* Pods-HeroAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations.debug.xcconfig"; sourceTree = "<group>"; };
-		9F118B1A20BC54D800C0DC20 /* HeroAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64306CE682EEDC8E0A72AEC3 /* Pods-ThreeLevelAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.debug.xcconfig"; sourceTree = "<group>"; };
+		6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeLevelAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F118B1A20BC54D800C0DC20 /* ThreeLevelAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeLevelAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F118B2420BC54D900C0DC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F118B2720BC54D900C0DC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,8 +44,10 @@
 		9F118B4520BC5CA300C0DC20 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9FCD90E820D40DE80090DD71 /* DstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DstView.swift; sourceTree = "<group>"; };
 		9FCD90E920D40DE80090DD71 /* DstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DstView.xib; sourceTree = "<group>"; };
-		A9C809010E713140412B1B78 /* Pods_HeroAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B62600F8100D882D0DEA604A /* Pods-HeroAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations.release.xcconfig"; sourceTree = "<group>"; };
+		A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeLevelAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62600F8100D882D0DEA604A /* Pods-ThreeLevelAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.release.xcconfig"; sourceTree = "<group>"; };
+		B7891881C57A9432D3FB91CF /* Pods-ThreeLevelAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.debug.xcconfig"; sourceTree = "<group>"; };
+		E3488EB2AE86B7FD4DF5296E /* Pods-ThreeLevelAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AAE6809BFBE70B7BC8A7760 /* Pods_HeroAnimations.framework in Frameworks */,
+				6AAE6809BFBE70B7BC8A7760 /* Pods_ThreeLevelAnimations.framework in Frameworks */,
+				ACBD88F6407C37855903CE93 /* Pods_ThreeLevelAnimations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +66,8 @@
 		3D6ABF6057A3703C218C49F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A9C809010E713140412B1B78 /* Pods_HeroAnimations.framework */,
+				A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */,
+				6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,8 +75,10 @@
 		954466DD05C2D92236276AA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				64306CE682EEDC8E0A72AEC3 /* Pods-HeroAnimations.debug.xcconfig */,
-				B62600F8100D882D0DEA604A /* Pods-HeroAnimations.release.xcconfig */,
+				64306CE682EEDC8E0A72AEC3 /* Pods-ThreeLevelAnimations.debug.xcconfig */,
+				B62600F8100D882D0DEA604A /* Pods-ThreeLevelAnimations.release.xcconfig */,
+				B7891881C57A9432D3FB91CF /* Pods-ThreeLevelAnimations.debug.xcconfig */,
+				E3488EB2AE86B7FD4DF5296E /* Pods-ThreeLevelAnimations.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -89,7 +97,7 @@
 		9F118B1B20BC54D800C0DC20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F118B1A20BC54D800C0DC20 /* HeroAnimations.app */,
+				9F118B1A20BC54D800C0DC20 /* ThreeLevelAnimations.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,9 +142,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F118B1920BC54D800C0DC20 /* HeroAnimations */ = {
+		9F118B1920BC54D800C0DC20 /* ThreeLevelAnimations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "HeroAnimations" */;
+			buildConfigurationList = 9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "ThreeLevelAnimations" */;
 			buildPhases = (
 				EEDFA6D6B0363A8571DABED4 /* [CP] Check Pods Manifest.lock */,
 				9F118B1620BC54D800C0DC20 /* Sources */,
@@ -149,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = HeroAnimations;
-			productName = HeroAnimations;
-			productReference = 9F118B1A20BC54D800C0DC20 /* HeroAnimations.app */;
+			name = ThreeLevelAnimations;
+			productName = ThreeLevelAnimations;
+			productReference = 9F118B1A20BC54D800C0DC20 /* ThreeLevelAnimations.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "HeroAnimations" */;
+			buildConfigurationList = 9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "ThreeLevelAnimations" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -182,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F118B1920BC54D800C0DC20 /* HeroAnimations */,
+				9F118B1920BC54D800C0DC20 /* ThreeLevelAnimations */,
 			);
 		};
 /* End PBXProject section */
@@ -209,7 +217,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -218,7 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CFAF2AD9F1FF6C471F3B24AF /* [CP] Copy Pods Resources */ = {
@@ -233,7 +241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroAnimations/Pods-HeroAnimations-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEDFA6D6B0363A8571DABED4 /* [CP] Check Pods Manifest.lock */ = {
@@ -247,7 +255,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HeroAnimations-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ThreeLevelAnimations-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -403,14 +411,14 @@
 		};
 		9F118B2D20BC54D900C0DC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64306CE682EEDC8E0A72AEC3 /* Pods-HeroAnimations.debug.xcconfig */;
+			baseConfigurationReference = B7891881C57A9432D3FB91CF /* Pods-ThreeLevelAnimations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.HeroAnimations;
+				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.ThreeLevelAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,14 +427,14 @@
 		};
 		9F118B2E20BC54D900C0DC20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B62600F8100D882D0DEA604A /* Pods-HeroAnimations.release.xcconfig */;
+			baseConfigurationReference = E3488EB2AE86B7FD4DF5296E /* Pods-ThreeLevelAnimations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.HeroAnimations;
+				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.ThreeLevelAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,7 +444,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "HeroAnimations" */ = {
+		9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "ThreeLevelAnimations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F118B2A20BC54D900C0DC20 /* Debug */,
@@ -445,7 +453,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "HeroAnimations" */ = {
+		9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "ThreeLevelAnimations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F118B2D20BC54D900C0DC20 /* Debug */,
