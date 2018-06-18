@@ -13,8 +13,6 @@
 		9F118B2820BC54D900C0DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B2620BC54D900C0DC20 /* LaunchScreen.storyboard */; };
 		9F118B3320BC57FB00C0DC20 /* SampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B3020BC57FB00C0DC20 /* SampleCoordinator.swift */; };
 		9F118B3720BC581F00C0DC20 /* SimpleCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B3620BC581F00C0DC20 /* SimpleCallback.swift */; };
-		9F118B3A20BC58BD00C0DC20 /* SrcView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B3820BC58BD00C0DC20 /* SrcView.xib */; };
-		9F118B3B20BC58BD00C0DC20 /* SrcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B3920BC58BD00C0DC20 /* SrcView.swift */; };
 		9F118B4120BC58F200C0DC20 /* UIViewControllerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B3D20BC58F100C0DC20 /* UIViewControllerTemplate.swift */; };
 		9F118B4220BC58F200C0DC20 /* UIView+NibFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B3E20BC58F100C0DC20 /* UIView+NibFile.swift */; };
 		9F118B4320BC58F200C0DC20 /* UITableViewCellTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B3F20BC58F100C0DC20 /* UITableViewCellTemplate.swift */; };
@@ -22,8 +20,12 @@
 		9F118B4620BC5CA300C0DC20 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B4520BC5CA300C0DC20 /* Localizable.strings */; };
 		9FCD435720D7E4D5002F108D /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD435520D7E4D5002F108D /* SampleView.xib */; };
 		9FCD435820D7E4D5002F108D /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435620D7E4D5002F108D /* SampleView.swift */; };
-		9FCD90EA20D40DE80090DD71 /* DstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD90E820D40DE80090DD71 /* DstView.swift */; };
-		9FCD90EB20D40DE80090DD71 /* DstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD90E920D40DE80090DD71 /* DstView.xib */; };
+		9FCD435F20D7E7D1002F108D /* HeroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435A20D7E7D0002F108D /* HeroCoordinator.swift */; };
+		9FCD436020D7E7D1002F108D /* DstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435B20D7E7D1002F108D /* DstView.swift */; };
+		9FCD436120D7E7D1002F108D /* DstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD435C20D7E7D1002F108D /* DstView.xib */; };
+		9FCD436220D7E7D1002F108D /* SrcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435D20D7E7D1002F108D /* SrcView.swift */; };
+		9FCD436320D7E7D1002F108D /* SrcView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD435E20D7E7D1002F108D /* SrcView.xib */; };
+		9FCD436520D7E7DB002F108D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD436420D7E7DB002F108D /* Coordinator.swift */; };
 		ACBD88F6407C37855903CE93 /* Pods_ThreeLevelAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +39,6 @@
 		9F118B2920BC54D900C0DC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F118B3020BC57FB00C0DC20 /* SampleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCoordinator.swift; sourceTree = "<group>"; };
 		9F118B3620BC581F00C0DC20 /* SimpleCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCallback.swift; sourceTree = "<group>"; };
-		9F118B3820BC58BD00C0DC20 /* SrcView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SrcView.xib; sourceTree = "<group>"; };
-		9F118B3920BC58BD00C0DC20 /* SrcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SrcView.swift; sourceTree = "<group>"; };
 		9F118B3D20BC58F100C0DC20 /* UIViewControllerTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerTemplate.swift; sourceTree = "<group>"; };
 		9F118B3E20BC58F100C0DC20 /* UIView+NibFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibFile.swift"; sourceTree = "<group>"; };
 		9F118B3F20BC58F100C0DC20 /* UITableViewCellTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellTemplate.swift; sourceTree = "<group>"; };
@@ -46,8 +46,12 @@
 		9F118B4520BC5CA300C0DC20 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9FCD435520D7E4D5002F108D /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		9FCD435620D7E4D5002F108D /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
-		9FCD90E820D40DE80090DD71 /* DstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DstView.swift; sourceTree = "<group>"; };
-		9FCD90E920D40DE80090DD71 /* DstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DstView.xib; sourceTree = "<group>"; };
+		9FCD435A20D7E7D0002F108D /* HeroCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCoordinator.swift; sourceTree = "<group>"; };
+		9FCD435B20D7E7D1002F108D /* DstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DstView.swift; sourceTree = "<group>"; };
+		9FCD435C20D7E7D1002F108D /* DstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DstView.xib; sourceTree = "<group>"; };
+		9FCD435D20D7E7D1002F108D /* SrcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SrcView.swift; sourceTree = "<group>"; };
+		9FCD435E20D7E7D1002F108D /* SrcView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SrcView.xib; sourceTree = "<group>"; };
+		9FCD436420D7E7DB002F108D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeLevelAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62600F8100D882D0DEA604A /* Pods-ThreeLevelAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.release.xcconfig"; sourceTree = "<group>"; };
 		B7891881C57A9432D3FB91CF /* Pods-ThreeLevelAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,8 +113,10 @@
 		9F118B1C20BC54D800C0DC20 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				9FCD435920D7E701002F108D /* Hero */,
 				9F118B2F20BC57EC00C0DC20 /* Sample */,
 				9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */,
+				9FCD436420D7E7DB002F108D /* Coordinator.swift */,
 				9F118B3620BC581F00C0DC20 /* SimpleCallback.swift */,
 				9F118B2420BC54D900C0DC20 /* Assets.xcassets */,
 				9F118B2620BC54D900C0DC20 /* LaunchScreen.storyboard */,
@@ -126,10 +132,6 @@
 				9F118B3020BC57FB00C0DC20 /* SampleCoordinator.swift */,
 				9FCD435620D7E4D5002F108D /* SampleView.swift */,
 				9FCD435520D7E4D5002F108D /* SampleView.xib */,
-				9F118B3920BC58BD00C0DC20 /* SrcView.swift */,
-				9F118B3820BC58BD00C0DC20 /* SrcView.xib */,
-				9FCD90E820D40DE80090DD71 /* DstView.swift */,
-				9FCD90E920D40DE80090DD71 /* DstView.xib */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -143,6 +145,18 @@
 				9F118B3D20BC58F100C0DC20 /* UIViewControllerTemplate.swift */,
 			);
 			path = External;
+			sourceTree = "<group>";
+		};
+		9FCD435920D7E701002F108D /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD435A20D7E7D0002F108D /* HeroCoordinator.swift */,
+				9FCD435B20D7E7D1002F108D /* DstView.swift */,
+				9FCD435C20D7E7D1002F108D /* DstView.xib */,
+				9FCD435D20D7E7D1002F108D /* SrcView.swift */,
+				9FCD435E20D7E7D1002F108D /* SrcView.xib */,
+			);
+			path = Hero;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FCD90EB20D40DE80090DD71 /* DstView.xib in Resources */,
+				9FCD436120D7E7D1002F108D /* DstView.xib in Resources */,
+				9FCD436320D7E7D1002F108D /* SrcView.xib in Resources */,
 				9F118B4620BC5CA300C0DC20 /* Localizable.strings in Resources */,
-				9F118B3A20BC58BD00C0DC20 /* SrcView.xib in Resources */,
 				9F118B2820BC54D900C0DC20 /* LaunchScreen.storyboard in Resources */,
 				9FCD435720D7E4D5002F108D /* SampleView.xib in Resources */,
 				9F118B2520BC54D900C0DC20 /* Assets.xcassets in Resources */,
@@ -278,13 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCD436020D7E7D1002F108D /* DstView.swift in Sources */,
+				9FCD435F20D7E7D1002F108D /* HeroCoordinator.swift in Sources */,
+				9FCD436220D7E7D1002F108D /* SrcView.swift in Sources */,
 				9FCD435820D7E4D5002F108D /* SampleView.swift in Sources */,
 				9F118B4420BC58F200C0DC20 /* UIView+Embed.swift in Sources */,
-				9F118B3B20BC58BD00C0DC20 /* SrcView.swift in Sources */,
-				9FCD90EA20D40DE80090DD71 /* DstView.swift in Sources */,
 				9F118B4220BC58F200C0DC20 /* UIView+NibFile.swift in Sources */,
 				9F118B3320BC57FB00C0DC20 /* SampleCoordinator.swift in Sources */,
 				9F118B4120BC58F200C0DC20 /* UIViewControllerTemplate.swift in Sources */,
+				9FCD436520D7E7DB002F108D /* Coordinator.swift in Sources */,
 				9F118B1E20BC54D800C0DC20 /* AppDelegate.swift in Sources */,
 				9F118B4320BC58F200C0DC20 /* UITableViewCellTemplate.swift in Sources */,
 				9F118B3720BC581F00C0DC20 /* SimpleCallback.swift in Sources */,

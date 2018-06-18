@@ -1,4 +1,5 @@
 
+import iCarousel
 import UIKit
 
 class SampleView: UIView

@@ -8,6 +8,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     // MARK: - SETUP
 
     var window: UIWindow?
+    private var coordinator: Coordinator!
+
 
     func application(
         _ application: UIApplication,
@@ -15,27 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     ) -> Bool {
         // Create window.
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        // Create sample coordinator.
-        self.setupSampleCoordinator()
+
+        self.setupCoordinator()
+
         // Display window.
         self.window!.backgroundColor = UIColor.white
         self.window!.makeKeyAndVisible()
         return true
     }
 
-    // MARK: - SAMPLE COORDINATOR
+    // MARK: - COORDINATORS
 
-    private var sampleCoordinator: SampleCoordinator!
-    
-    private func setupSampleCoordinator()
+    private func setupCoordinator()
     {
-        self.sampleCoordinator = SampleCoordinator()
-        self.window!.rootViewController = self.sampleCoordinator.rootVC
+        // NOTE Use only one coordinator at a time.
+        //self.coordinator = HeroCoordinator()
+        self.coordinator = SampleCoordinator()
+
+        self.window!.rootViewController = self.coordinator.rootVC
 
         // If root VC changes, re-assign it to the window.
-        self.sampleCoordinator.rootVCChanged = { [weak self] in
+        self.coordinator.rootVCChanged = { [weak self] in
             guard let this = self else { return }
-            this.window!.rootViewController = this.sampleCoordinator.rootVC
+            this.window!.rootViewController = this.coordinator.rootVC
         }
     }
 
