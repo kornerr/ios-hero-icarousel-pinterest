@@ -1,4 +1,5 @@
 
+import SkeletonView
 import UIKit
 
 class SampleCoordinator: Coordinator
@@ -44,6 +45,7 @@ class SampleCoordinator: Coordinator
             SectionsItem("Turians"),
             SectionsItem("Volus"),
         ]
+        self.sectionsView.showAnimatedGradientSkeleton()
 
         // TODO Set images later through DispatchQueue to simulate their loading.
     }
