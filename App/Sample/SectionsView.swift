@@ -23,6 +23,8 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
         self.setupCarousel()
     }
 
+    // MARK: - ITEMS
+
     var items: [SectionsItem]
     {
         get
@@ -41,6 +43,30 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
     {
         self.carouselView.reloadData()
     }
+
+    // MARK: - SELECTED ITEM
+
+    var selectedItemIdChanged: SimpleCallback?
+    var selectedItemId: Int
+    {
+        get
+        {
+            return self.carouselView.currentItemIndex
+        }
+        set
+        {
+            self.carouselView.currentItemIndex = newValue
+        }
+    }
+    
+    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel)
+    {
+        if let report = self.selectedItemIdChanged
+        {
+            report()
+        }
+    }
+
 
     // MARK: - CAROUSEL
     

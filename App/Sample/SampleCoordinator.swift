@@ -30,12 +30,15 @@ class SampleCoordinator: Coordinator
 
         self.sectionsView = UIView.loadFromNib()
         self.sampleView.sectionsContainerView.embeddedView = self.sectionsView
-        self.setupItems()
+
+        self.setupSectionItems()
+
+        self.setupCategoryItems()
 
         self.rootVC = vc
     }
 
-    private func setupItems()
+    private func setupSectionItems()
     {
         // Use MassEffect races as sections: http://masseffect.wikia.com/wiki/Races
         self.sectionsView.items = [
@@ -76,8 +79,17 @@ class SampleCoordinator: Coordinator
                 UIImage(named: "race.volus.png")!
             ),
         ]
+        self.sectionsView.selectedItemId = 5
 
         // TODO Set images later through DispatchQueue to simulate their loading.
+    }
+
+    private func setupCategoryItems()
+    {
+        self.sectionsView.selectedItemIdChanged = { [weak self] in
+            guard let this = self else { return }
+            SAMPLE_COORDINATOR_LOG("Selected section: '\(this.sectionsView.selectedItemId)'")
+        }
     }
 
 }
