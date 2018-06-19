@@ -4,5 +4,6 @@ target 'ThreeLevelAnimations' do
   use_frameworks!
   pod 'Hero', '~> 1.2.0'
   pod 'iCarousel', '~> 1.8.3'
+  pod 'SkeletonView', '~> 1.2.1'
 
 end

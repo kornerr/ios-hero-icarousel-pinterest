@@ -1,15 +1,18 @@
 PODS:
   - Hero (1.2.0)
   - iCarousel (1.8.3)
+  - SkeletonView (1.2.1)
 
 DEPENDENCIES:
   - Hero (~> 1.2.0)
   - iCarousel (~> 1.8.3)
+  - SkeletonView (~> 1.2.1)
 
 SPEC CHECKSUMS:
   Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  SkeletonView: 98a31213f9282076149e6eb23f46734604f02086
 
-PODFILE CHECKSUM: 7cc9e3bd500ed361d2e5acd327802ef9feb4bc1d
+PODFILE CHECKSUM: af9dee11c9affc1265506f5b046534deea5ffb12
 
 COCOAPODS: 1.4.0
