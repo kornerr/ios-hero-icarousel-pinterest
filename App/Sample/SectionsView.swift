@@ -32,45 +32,21 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
         set
         {
             _items = newValue
-            self.updateItems()
+            self.carouselView.reloadData()
         }
     }
     private var _items = [SectionsItem]()
 
-    private func updateItems() {
-        // We don't expect products to be updated,
-        // so we simply assign a new batch of views.
-
-        /*
-        let height = self.frame.size.height
-        let geom = CGRect(x: 0, y: 0, width: ITEM_WIDTH, height: height)
-
-        // Recreate items.
-        self.carouselItems = []
-        for item in self.items
-        {
-            var itemView: SectionsItemView! = UIView.loadFromNib()
-            itemView.frame = geom
-            //itemView.delegate = self
-            //self.loadProduct(id: productId, for: productView)
-            self.carouselItems.append(itemView)
-        }
-        */
-        // Display new views.
-        self.carouselView.reloadData()
-    }
-
     // MARK: - CAROUSEL
     
     @IBOutlet private var carouselView: iCarousel!
-
-    //private var carouselItems = [SectionsItemView]()
 
     private func setupCarousel()
     {
         self.carouselView.dataSource = self
         self.carouselView.delegate = self
         self.carouselView.bounceDistance = BOUNCE_DISTANCE
+        self.carouselView.isPagingEnabled = true
         self.carouselView.type = .coverFlow
     }
     
@@ -83,10 +59,8 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
         _ carousel: iCarousel,
         viewForItemAt index: Int,
         reusing view: UIView?
-    ) -> UIView
-    {
-
-        // Reuse view.
+    ) -> UIView {
+        // Reuse old view.
         if let view = view
         {
             return view
@@ -94,32 +68,21 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
         // Create new view.
         else
         {
-            let height = self.frame.size.height
-            let geom = CGRect(x: 0, y: 0, width: ITEM_WIDTH, height: height)
-            //var itemView: SectionsItemView! = UIView.loadFromNib()
-            var itemView = UIView()
-            itemView.backgroundColor = .red
-            itemView.frame = geom
-            return itemView
+            return self.createCarouselItemView()
         }
     }
 
-    /*
-    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel)
+    private func createCarouselItemView() -> UIView
     {
-        self.updateNavigationButtons()
-    }
-    */
+        let view = UIImageView()
+        view.backgroundColor = .red
+        // Resize.
+        let height = self.frame.size.height
+        let geom = CGRect(x: 0, y: 0, width: ITEM_WIDTH, height: height)
+        view.frame = geom
 
-    /*
-    // MARK: - SELECTION
-
-    func itemSelected(itemView: ItemView) {
-        if let item = self.items[] {
-            self.delegate?.itemSelect(item)
-        }
+        return view
     }
-    */
 
 }
 
