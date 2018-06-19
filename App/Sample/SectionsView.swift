@@ -1,6 +1,5 @@
 
 import iCarousel
-import SkeletonView
 import UIKit
 
 private func SECTIONS_VIEW_LOG(_ message: String)
@@ -22,7 +21,6 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
     {
         super.awakeFromNib()
         self.setupCarousel()
-        self.isSkeletonable = true
     }
 
     var items: [SectionsItem]
@@ -75,15 +73,16 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
         // Create new view.
         else
         {
-            return self.createCarouselItemView()
+            let item = self.items[index]
+            return self.createCarouselItemView(item)
         }
     }
 
-    private func createCarouselItemView() -> UIView
+    private func createCarouselItemView(_ item: SectionsItem) -> UIView
     {
         let view = SectionsItemView()
-        view.backgroundColor = .red
-        view.isSkeletonable = true
+        view.image = item.image
+
         // Resize.
         let height = self.frame.size.height
         let geom = CGRect(x: 0, y: 0, width: ITEM_WIDTH, height: height)

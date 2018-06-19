@@ -19,6 +19,17 @@
 		9F118B4420BC58F200C0DC20 /* UIView+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B4020BC58F200C0DC20 /* UIView+Embed.swift */; };
 		9F118B4620BC5CA300C0DC20 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B4520BC5CA300C0DC20 /* Localizable.strings */; };
 		9F2D391720D927DD0095C762 /* SectionsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D391620D927DD0095C762 /* SectionsItemView.swift */; };
+		9F2D391C20D948E60095C762 /* thumbnail.asari.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D391B20D948E60095C762 /* thumbnail.asari.bmp */; };
+		9F2D393220D950D50095C762 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393120D950D50095C762 /* README.md */; };
+		9F2D393C20D951730095C762 /* race.hanar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393320D951730095C762 /* race.hanar.png */; };
+		9F2D393D20D951730095C762 /* race.elcor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393420D951730095C762 /* race.elcor.png */; };
+		9F2D393E20D951730095C762 /* race.salarians.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393520D951730095C762 /* race.salarians.png */; };
+		9F2D393F20D951730095C762 /* race.drell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393620D951730095C762 /* race.drell.png */; };
+		9F2D394020D951730095C762 /* race.volus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393720D951730095C762 /* race.volus.png */; };
+		9F2D394120D951730095C762 /* race.humans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393820D951730095C762 /* race.humans.jpg */; };
+		9F2D394220D951730095C762 /* race.keeper.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393920D951730095C762 /* race.keeper.png */; };
+		9F2D394320D951730095C762 /* race.asari.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393A20D951730095C762 /* race.asari.png */; };
+		9F2D394420D951730095C762 /* race.turians.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393B20D951730095C762 /* race.turians.png */; };
 		9FCD435720D7E4D5002F108D /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD435520D7E4D5002F108D /* SampleView.xib */; };
 		9FCD435820D7E4D5002F108D /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435620D7E4D5002F108D /* SampleView.swift */; };
 		9FCD435F20D7E7D1002F108D /* HeroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435A20D7E7D0002F108D /* HeroCoordinator.swift */; };
@@ -49,6 +60,17 @@
 		9F118B4020BC58F200C0DC20 /* UIView+Embed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Embed.swift"; sourceTree = "<group>"; };
 		9F118B4520BC5CA300C0DC20 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9F2D391620D927DD0095C762 /* SectionsItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsItemView.swift; sourceTree = "<group>"; };
+		9F2D391B20D948E60095C762 /* thumbnail.asari.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = thumbnail.asari.bmp; sourceTree = "<group>"; };
+		9F2D393120D950D50095C762 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9F2D393320D951730095C762 /* race.hanar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.hanar.png; sourceTree = "<group>"; };
+		9F2D393420D951730095C762 /* race.elcor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.elcor.png; sourceTree = "<group>"; };
+		9F2D393520D951730095C762 /* race.salarians.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.salarians.png; sourceTree = "<group>"; };
+		9F2D393620D951730095C762 /* race.drell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.drell.png; sourceTree = "<group>"; };
+		9F2D393720D951730095C762 /* race.volus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.volus.png; sourceTree = "<group>"; };
+		9F2D393820D951730095C762 /* race.humans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = race.humans.jpg; sourceTree = "<group>"; };
+		9F2D393920D951730095C762 /* race.keeper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.keeper.png; sourceTree = "<group>"; };
+		9F2D393A20D951730095C762 /* race.asari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.asari.png; sourceTree = "<group>"; };
+		9F2D393B20D951730095C762 /* race.turians.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.turians.png; sourceTree = "<group>"; };
 		9FCD435520D7E4D5002F108D /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		9FCD435620D7E4D5002F108D /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		9FCD435A20D7E7D0002F108D /* HeroCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCoordinator.swift; sourceTree = "<group>"; };
@@ -104,6 +126,7 @@
 			children = (
 				9F118B3C20BC58E400C0DC20 /* External */,
 				9F118B1C20BC54D800C0DC20 /* App */,
+				9F2D391D20D94FEF0095C762 /* Images */,
 				9F118B1B20BC54D800C0DC20 /* Products */,
 				954466DD05C2D92236276AA7 /* Pods */,
 				3D6ABF6057A3703C218C49F3 /* Frameworks */,
@@ -127,6 +150,7 @@
 				9FCD436420D7E7DB002F108D /* Coordinator.swift */,
 				9F118B3620BC581F00C0DC20 /* SimpleCallback.swift */,
 				9F118B2420BC54D900C0DC20 /* Assets.xcassets */,
+				9F2D391B20D948E60095C762 /* thumbnail.asari.bmp */,
 				9F118B2620BC54D900C0DC20 /* LaunchScreen.storyboard */,
 				9F118B2920BC54D900C0DC20 /* Info.plist */,
 				9F118B4520BC5CA300C0DC20 /* Localizable.strings */,
@@ -157,6 +181,31 @@
 				9F118B3D20BC58F100C0DC20 /* UIViewControllerTemplate.swift */,
 			);
 			path = External;
+			sourceTree = "<group>";
+		};
+		9F2D391D20D94FEF0095C762 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9F2D391E20D950030095C762 /* Race */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9F2D391E20D950030095C762 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				9F2D393120D950D50095C762 /* README.md */,
+				9F2D393A20D951730095C762 /* race.asari.png */,
+				9F2D393620D951730095C762 /* race.drell.png */,
+				9F2D393420D951730095C762 /* race.elcor.png */,
+				9F2D393320D951730095C762 /* race.hanar.png */,
+				9F2D393820D951730095C762 /* race.humans.jpg */,
+				9F2D393920D951730095C762 /* race.keeper.png */,
+				9F2D393520D951730095C762 /* race.salarians.png */,
+				9F2D393B20D951730095C762 /* race.turians.png */,
+				9F2D393720D951730095C762 /* race.volus.png */,
+			);
+			path = Race;
 			sourceTree = "<group>";
 		};
 		9FCD435920D7E701002F108D /* Hero */ = {
@@ -232,11 +281,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2D393C20D951730095C762 /* race.hanar.png in Resources */,
 				9FCD436120D7E7D1002F108D /* DstView.xib in Resources */,
+				9F2D393220D950D50095C762 /* README.md in Resources */,
 				9FCD436320D7E7D1002F108D /* SrcView.xib in Resources */,
+				9F2D393E20D951730095C762 /* race.salarians.png in Resources */,
+				9F2D394020D951730095C762 /* race.volus.png in Resources */,
+				9F2D393F20D951730095C762 /* race.drell.png in Resources */,
+				9F2D394220D951730095C762 /* race.keeper.png in Resources */,
+				9F2D391C20D948E60095C762 /* thumbnail.asari.bmp in Resources */,
 				9F118B4620BC5CA300C0DC20 /* Localizable.strings in Resources */,
+				9F2D393D20D951730095C762 /* race.elcor.png in Resources */,
 				9F118B2820BC54D900C0DC20 /* LaunchScreen.storyboard in Resources */,
 				9FCD435720D7E4D5002F108D /* SampleView.xib in Resources */,
+				9F2D394120D951730095C762 /* race.humans.jpg in Resources */,
+				9F2D394420D951730095C762 /* race.turians.png in Resources */,
+				9F2D394320D951730095C762 /* race.asari.png in Resources */,
 				9FCD436820D7EDFD002F108D /* SectionsView.xib in Resources */,
 				9F118B2520BC54D900C0DC20 /* Assets.xcassets in Resources */,
 			);
