@@ -1,13 +1,14 @@
 
 import UIKit
 
+private func COLLECTION_SECTIONS_VIEW_LOG(_ message: String)
+{
+    NSLog("CollectionSectionsView \(message)")
+}
+
 class CollectionSectionsView:
     UIView,
     UICollectionViewDataSource
-    /*,
-    UICollectionViewDelegate, 
-    UICollectionViewDelegateFlowLayout
-    */
 {
 
     // MARK: - SETUP
@@ -36,6 +37,15 @@ class CollectionSectionsView:
 
     private func updateItems()
     {
+        // Provide item sizes to layout.
+        let defaultSize = CGSize(width: 100, height: 100)
+        let sizes = self.items.map { $0.image?.size ?? defaultSize }
+        for size in sizes
+        {
+            COLLECTION_SECTIONS_VIEW_LOG("size '\(size)'")
+        }
+        self.layout.itemSizes = sizes
+        // Display items.
         self.collectionView.reloadData()
     }
 
