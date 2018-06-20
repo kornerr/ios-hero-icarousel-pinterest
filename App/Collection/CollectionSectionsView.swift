@@ -84,8 +84,8 @@ class CollectionSectionsView:
                 for: indexPath
             )
             as! Cell
-        //cell.itemView.setImageURL(imageURL)
-
+        let item = self.items[indexPath.row]
+        cell.itemView.image = item.image
         return cell
     }
 

@@ -18,6 +18,22 @@ class CollectionSectionsItemView: UIView
         let value = 100
         return CGSize(width: value, height: value)
     }
+
+    // MARK: - IMAGE
+
+    var image: UIImage?
+    {
+        get
+        {
+            return self.imageView?.image
+        }
+        set
+        {
+            self.imageView?.image = newValue
+        }
+    }
+    
+    @IBOutlet private var imageView: UIImageView!
     
 }
 
