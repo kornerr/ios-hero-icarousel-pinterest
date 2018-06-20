@@ -3,9 +3,11 @@ import UIKit
 
 class CollectionSectionsView:
     UIView,
-    UICollectionViewDataSource,
+    UICollectionViewDataSource
+    /*,
     UICollectionViewDelegate, 
     UICollectionViewDelegateFlowLayout
+    */
 {
 
     // MARK: - SETUP
@@ -40,12 +42,16 @@ class CollectionSectionsView:
     // MARK: - COLLECTION VIEW
 
     @IBOutlet private var collectionView: UICollectionView!
+    private var layout: PinterestLayout!
 
     private func setupCollectionView()
     {
         self.collectionView.register(Cell.self, forCellWithReuseIdentifier: CellId)
         self.collectionView.dataSource = self
-        self.collectionView.delegate = self
+
+        self.layout = PinterestLayout()
+        self.collectionView.collectionViewLayout = self.layout
+        //self.collectionView.delegate = self
     }
     
     func collectionView(
@@ -62,6 +68,7 @@ class CollectionSectionsView:
         return self.cell(forItemAt: indexPath)
     }
 
+    /*
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
@@ -69,6 +76,7 @@ class CollectionSectionsView:
     ) -> CGSize {
         return CellView.size()
     }
+    */
 
     // MARK: - CELL
 
