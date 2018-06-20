@@ -1,7 +1,7 @@
 
 import UIKit
 
-class CollectionSectionsItemView: UIView
+class PinterestSectionsItemView: UIView
 {
 
     // MARK: - SETUP

@@ -1,12 +1,12 @@
 
 import UIKit
 
-private func COLLECTION_SECTIONS_VIEW_LOG(_ message: String)
+private func PINTEREST_SECTIONS_VIEW_LOG(_ message: String)
 {
-    NSLog("CollectionSectionsView \(message)")
+    NSLog("PinterestSectionsView \(message)")
 }
 
-class CollectionSectionsView:
+class PinterestSectionsView:
     UIView,
     UICollectionViewDataSource
 {
@@ -87,7 +87,7 @@ class CollectionSectionsView:
     // MARK: - CELL
 
     private let CellId = "CollectionViewCellId"
-    private typealias CellView = CollectionSectionsItemView
+    private typealias CellView = PinterestSectionsItemView
     private typealias Cell = UICollectionViewCellTemplate<CellView>
 
     private func cell(forItemAt indexPath: IndexPath) -> UICollectionViewCell

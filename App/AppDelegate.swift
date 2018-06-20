@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         // NOTE Use only one coordinator at a time.
         //self.coordinator = HeroCoordinator()
         //self.coordinator = SampleCoordinator()
-        self.coordinator = CollectionCoordinator()
+        self.coordinator = PinterestCoordinator()
 
         self.window!.rootViewController = self.coordinator.rootVC
 

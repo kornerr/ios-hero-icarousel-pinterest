@@ -1,12 +1,12 @@
 
 import UIKit
 
-private func COLLECTION_COORDINATOR_LOG(_ message: String)
+private func PINTEREST_COORDINATOR_LOG(_ message: String)
 {
-    NSLog("CollectionCoordinator \(message)")
+    NSLog("PinterestCoordinator \(message)")
 }
 
-class CollectionCoordinator: Coordinator
+class PinterestCoordinator: Coordinator
 {
 
     // MARK: - SETUP
@@ -19,7 +19,7 @@ class CollectionCoordinator: Coordinator
 
     // MARK: - COLLECTION
 
-    private var sectionsView: CollectionSectionsView!
+    private var sectionsView: PinterestSectionsView!
 
     private func setupCollection()
     {
