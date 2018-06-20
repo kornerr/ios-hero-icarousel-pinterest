@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14109"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,6 +19,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZl-SL-XP5">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-jL-feT">
+                            <rect key="frame" x="0.0" y="28" width="320" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKz-dm-S3Z">
                             <rect key="frame" x="0.0" y="57" width="320" height="284"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -26,7 +32,10 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="MKz-dm-S3Z" firstAttribute="top" secondItem="uBT-jL-feT" secondAttribute="bottom" constant="8" id="0Tu-7D-xpE"/>
                         <constraint firstItem="MKz-dm-S3Z" firstAttribute="height" secondItem="vZl-SL-XP5" secondAttribute="height" multiplier="0.5" id="3fN-Xw-00d"/>
+                        <constraint firstItem="uBT-jL-feT" firstAttribute="leading" secondItem="vZl-SL-XP5" secondAttribute="leading" id="IPr-Lg-YTg"/>
+                        <constraint firstAttribute="trailing" secondItem="uBT-jL-feT" secondAttribute="trailing" id="o9a-Qg-5Iz"/>
                         <constraint firstAttribute="trailing" secondItem="MKz-dm-S3Z" secondAttribute="trailing" id="rn7-cw-F09"/>
                         <constraint firstItem="MKz-dm-S3Z" firstAttribute="centerY" secondItem="vZl-SL-XP5" secondAttribute="centerY" multiplier="0.7" id="u9T-FW-rNX"/>
                         <constraint firstItem="MKz-dm-S3Z" firstAttribute="leading" secondItem="vZl-SL-XP5" secondAttribute="leading" id="uaw-W7-Ffa"/>
@@ -44,6 +53,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="sectionsContainerView" destination="MKz-dm-S3Z" id="dUq-Ne-1Sb"/>
+                <outlet property="titleLabel" destination="uBT-jL-feT" id="3tc-vU-dQ0"/>
             </connections>
             <point key="canvasLocation" x="141" y="169"/>
         </view>

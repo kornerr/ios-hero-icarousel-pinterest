@@ -32,8 +32,21 @@ class SampleCoordinator: Coordinator
         self.sampleView.sectionsContainerView.embeddedView = self.sectionsView
 
         self.setupSectionItems()
-
         self.setupCategoryItems()
+
+        self.sectionsView.selectedItemIdChanged = { [weak self] in
+            guard let this = self else { return }
+            
+            // Display currently selected title.
+            let item = this.sectionsView.items[this.sectionsView.selectedItemId]
+            this.sampleView.title = item.title
+
+            // Print selected section id.
+            SAMPLE_COORDINATOR_LOG("Selected section: '\(this.sectionsView.selectedItemId)'")
+        }
+        
+        self.sectionsView.selectedItemId = 5
+
 
         self.rootVC = vc
     }
@@ -79,17 +92,11 @@ class SampleCoordinator: Coordinator
                 UIImage(named: "race.volus.png")!
             ),
         ]
-        self.sectionsView.selectedItemId = 5
-
         // TODO Set images later through DispatchQueue to simulate their loading.
     }
 
     private func setupCategoryItems()
     {
-        self.sectionsView.selectedItemIdChanged = { [weak self] in
-            guard let this = self else { return }
-            SAMPLE_COORDINATOR_LOG("Selected section: '\(this.sectionsView.selectedItemId)'")
-        }
     }
 
 }
