@@ -68,7 +68,7 @@ class PinterestLayout: UICollectionViewFlowLayout
             // * keep item's aspect ratio
             let factor = size.width / columnWidth
             // Calculate new height keeping original aspect ratio.
-            let height = size.height * factor + self.cellPadding * 2
+            let height = size.height / factor + self.cellPadding * 2
             let frame =
                 CGRect(
                     x: xOffsets[column],
@@ -93,6 +93,26 @@ class PinterestLayout: UICollectionViewFlowLayout
         }
     }
 
+    override func layoutAttributesForElements(
+        in rect: CGRect
+    ) -> [UICollectionViewLayoutAttributes]? {
+        var visibleAttributes = [UICollectionViewLayoutAttributes]()
+        // Find items that are in the rectangle.
+        for item in self.cache
+        {
+            if item.frame.intersects(rect)
+            {
+                visibleAttributes.append(item)
+            }
+        }
+        return visibleAttributes
+    }
+
+    override func layoutAttributesForItem(
+        at indexPath: IndexPath
+    ) -> UICollectionViewLayoutAttributes? {
+        return self.cache[indexPath.item]
+    }
 
 }
 

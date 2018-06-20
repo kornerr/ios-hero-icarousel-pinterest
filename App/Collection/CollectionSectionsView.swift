@@ -40,10 +40,6 @@ class CollectionSectionsView:
         // Provide item sizes to layout.
         let defaultSize = CGSize(width: 100, height: 100)
         let sizes = self.items.map { $0.image?.size ?? defaultSize }
-        for size in sizes
-        {
-            COLLECTION_SECTIONS_VIEW_LOG("size '\(size)'")
-        }
         self.layout.itemSizes = sizes
         // Display items.
         self.collectionView.reloadData()
