@@ -8,8 +8,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     // MARK: - SETUP
 
     var window: UIWindow?
-    private var coordinator: Coordinator!
-
 
     func application(
         _ application: UIApplication,
@@ -18,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         // Create window.
         self.window = UIWindow(frame: UIScreen.main.bounds)
 
-        self.setupCoordinator()
+        self.setupCoordinators()
 
         // Display window.
         self.window!.backgroundColor = UIColor.white
@@ -28,20 +26,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
     // MARK: - COORDINATORS
 
-    private func setupCoordinator()
+    private var heroCoordinator: HeroCoordinator!
+    private var sampleCoordinator: CarouselCoordinator!
+    private var pinterestCoordinator: PinterestCoordinator!
+
+    private func setupCoordinators()
     {
-        // NOTE Use only one coordinator at a time.
-        //self.coordinator = HeroCoordinator()
-        //self.coordinator = SampleCoordinator()
-        self.coordinator = PinterestCoordinator()
+        self.heroCoordinator = HeroCoordinator()
+        self.sampleCoordinator = CarouselCoordinator()
+        self.pinterestCoordinator = PinterestCoordinator()
 
-        self.window!.rootViewController = self.coordinator.rootVC
+        let tc = UITabBarController()
+        tc.viewControllers = [
+            self.heroCoordinator.rootVC,
+            self.sampleCoordinator.rootVC,
+            self.pinterestCoordinator.rootVC,
+        ]
 
-        // If root VC changes, re-assign it to the window.
-        self.coordinator.rootVCChanged = { [weak self] in
-            guard let this = self else { return }
-            this.window!.rootViewController = this.coordinator.rootVC
-        }
+        self.window!.rootViewController = tc
     }
 
 }

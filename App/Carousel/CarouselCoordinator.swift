@@ -1,12 +1,12 @@
 
 import UIKit
 
-private func SAMPLE_COORDINATOR_LOG(_ message: String)
+private func CAROUSEL_COORDINATOR_LOG(_ message: String)
 {
-    NSLog("SampleCoordinator \(message)")
+    NSLog("CarouselCoordinator \(message)")
 }
 
-class SampleCoordinator: Coordinator
+class CarouselCoordinator: Coordinator
 {
 
     // MARK: - SETUP
@@ -19,14 +19,14 @@ class SampleCoordinator: Coordinator
 
     // MARK: - SAMPLE
 
-    private var sampleView: SampleView!
-    private var sectionsView: SectionsView!
+    private var sampleView: CarouselView!
+    private var sectionsView: CarouselSectionsView!
 
     private func setupSample()
     {
         self.sampleView = UIView.loadFromNib()
         let vc = UIViewControllerTemplate(mainView: self.sampleView)
-        vc.title = NSLocalizedString("Sample.Title", comment: "")
+        vc.title = NSLocalizedString("Carousel.Title", comment: "")
 
         self.sectionsView = UIView.loadFromNib()
         self.sampleView.sectionsContainerView.embeddedView = self.sectionsView
@@ -42,7 +42,7 @@ class SampleCoordinator: Coordinator
             this.sampleView.title = item.title
 
             // Print selected section id.
-            SAMPLE_COORDINATOR_LOG("Selected section: '\(this.sectionsView.selectedItemId)'")
+            CAROUSEL_COORDINATOR_LOG("Selected section: '\(this.sectionsView.selectedItemId)'")
         }
         
         self.sectionsView.selectedItemId = 5

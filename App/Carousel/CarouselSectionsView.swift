@@ -2,17 +2,12 @@
 import iCarousel
 import UIKit
 
-private func SECTIONS_VIEW_LOG(_ message: String)
-{
-    NSLog("SectionsView \(message)")
-}
-
 // TODO Take view width as the base.
 private let ITEM_WIDTH: CGFloat = 200
 
 private let BOUNCE_DISTANCE: CGFloat = 0.2
 
-class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
+class CarouselSectionsView: UIView, iCarouselDataSource, iCarouselDelegate
 {
 
     // MARK: - SETUP
@@ -106,7 +101,7 @@ class SectionsView: UIView, iCarouselDataSource, iCarouselDelegate
 
     private func createCarouselItemView(_ item: SectionsItem) -> UIView
     {
-        let view = SectionsItemView()
+        let view = CarouselSectionsItemView()
         view.image = item.image
 
         // Resize.

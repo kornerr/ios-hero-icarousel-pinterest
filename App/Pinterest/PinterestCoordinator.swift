@@ -25,7 +25,7 @@ class PinterestCoordinator: Coordinator
     {
         self.sectionsView = UIView.loadFromNib()
         let vc = UIViewControllerTemplate(mainView: self.sectionsView)
-        vc.title = NSLocalizedString("Collection.Title", comment: "")
+        vc.title = NSLocalizedString("Pinterest.Title", comment: "")
 
         self.setupSectionItems()
 

@@ -2,7 +2,7 @@
 import iCarousel
 import UIKit
 
-class SampleView: UIView
+class CarouselView: UIView
 {
 
     // MARK: - SETUP
