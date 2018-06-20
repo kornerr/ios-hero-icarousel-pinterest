@@ -30,6 +30,10 @@
 		9F2D394220D951730095C762 /* race.keeper.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393920D951730095C762 /* race.keeper.png */; };
 		9F2D394320D951730095C762 /* race.asari.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393A20D951730095C762 /* race.asari.png */; };
 		9F2D394420D951730095C762 /* race.turians.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D393B20D951730095C762 /* race.turians.png */; };
+		9F9EF0DD20DA76FA00D1D523 /* CollectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9EF0DC20DA76FA00D1D523 /* CollectionCoordinator.swift */; };
+		9F9EF0E020DA77BD00D1D523 /* CollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9EF0DE20DA77BD00D1D523 /* CollectionView.xib */; };
+		9F9EF0E120DA77BD00D1D523 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9EF0DF20DA77BD00D1D523 /* CollectionView.swift */; };
+		9F9EF0E320DA79C400D1D523 /* UICollectionViewCellTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9EF0E220DA79C400D1D523 /* UICollectionViewCellTemplate.swift */; };
 		9FCD435720D7E4D5002F108D /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD435520D7E4D5002F108D /* SampleView.xib */; };
 		9FCD435820D7E4D5002F108D /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435620D7E4D5002F108D /* SampleView.swift */; };
 		9FCD435F20D7E7D1002F108D /* HeroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD435A20D7E7D0002F108D /* HeroCoordinator.swift */; };
@@ -71,6 +75,10 @@
 		9F2D393920D951730095C762 /* race.keeper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.keeper.png; sourceTree = "<group>"; };
 		9F2D393A20D951730095C762 /* race.asari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.asari.png; sourceTree = "<group>"; };
 		9F2D393B20D951730095C762 /* race.turians.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.turians.png; sourceTree = "<group>"; };
+		9F9EF0DC20DA76FA00D1D523 /* CollectionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCoordinator.swift; sourceTree = "<group>"; };
+		9F9EF0DE20DA77BD00D1D523 /* CollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionView.xib; sourceTree = "<group>"; };
+		9F9EF0DF20DA77BD00D1D523 /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		9F9EF0E220DA79C400D1D523 /* UICollectionViewCellTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellTemplate.swift; sourceTree = "<group>"; };
 		9FCD435520D7E4D5002F108D /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		9FCD435620D7E4D5002F108D /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		9FCD435A20D7E7D0002F108D /* HeroCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCoordinator.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 			children = (
 				9FCD435920D7E701002F108D /* Hero */,
 				9F118B2F20BC57EC00C0DC20 /* Sample */,
+				9F9EF0DB20DA76D600D1D523 /* Collection */,
 				9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */,
 				9FCD436420D7E7DB002F108D /* Coordinator.swift */,
 				9F118B3620BC581F00C0DC20 /* SimpleCallback.swift */,
@@ -175,6 +184,7 @@
 		9F118B3C20BC58E400C0DC20 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				9F9EF0E220DA79C400D1D523 /* UICollectionViewCellTemplate.swift */,
 				9F118B3F20BC58F100C0DC20 /* UITableViewCellTemplate.swift */,
 				9F118B4020BC58F200C0DC20 /* UIView+Embed.swift */,
 				9F118B3E20BC58F100C0DC20 /* UIView+NibFile.swift */,
@@ -206,6 +216,16 @@
 				9F2D393720D951730095C762 /* race.volus.png */,
 			);
 			path = Race;
+			sourceTree = "<group>";
+		};
+		9F9EF0DB20DA76D600D1D523 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				9F9EF0DC20DA76FA00D1D523 /* CollectionCoordinator.swift */,
+				9F9EF0DE20DA77BD00D1D523 /* CollectionView.xib */,
+				9F9EF0DF20DA77BD00D1D523 /* CollectionView.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 		9FCD435920D7E701002F108D /* Hero */ = {
@@ -284,6 +304,7 @@
 				9F2D393C20D951730095C762 /* race.hanar.png in Resources */,
 				9FCD436120D7E7D1002F108D /* DstView.xib in Resources */,
 				9F2D393220D950D50095C762 /* README.md in Resources */,
+				9F9EF0E020DA77BD00D1D523 /* CollectionView.xib in Resources */,
 				9FCD436320D7E7D1002F108D /* SrcView.xib in Resources */,
 				9F2D393E20D951730095C762 /* race.salarians.png in Resources */,
 				9F2D394020D951730095C762 /* race.volus.png in Resources */,
@@ -373,14 +394,17 @@
 				9FCD436220D7E7D1002F108D /* SrcView.swift in Sources */,
 				9FCD435820D7E4D5002F108D /* SampleView.swift in Sources */,
 				9F118B4420BC58F200C0DC20 /* UIView+Embed.swift in Sources */,
+				9F9EF0DD20DA76FA00D1D523 /* CollectionCoordinator.swift in Sources */,
 				9F118B4220BC58F200C0DC20 /* UIView+NibFile.swift in Sources */,
 				9FCD436920D7EDFD002F108D /* SectionsView.swift in Sources */,
+				9F9EF0E120DA77BD00D1D523 /* CollectionView.swift in Sources */,
 				9F118B3320BC57FB00C0DC20 /* SampleCoordinator.swift in Sources */,
 				9F118B4120BC58F200C0DC20 /* UIViewControllerTemplate.swift in Sources */,
 				9F2D391720D927DD0095C762 /* SectionsItemView.swift in Sources */,
 				9FCD436520D7E7DB002F108D /* Coordinator.swift in Sources */,
 				9F118B1E20BC54D800C0DC20 /* AppDelegate.swift in Sources */,
 				9F118B4320BC58F200C0DC20 /* UITableViewCellTemplate.swift in Sources */,
+				9F9EF0E320DA79C400D1D523 /* UICollectionViewCellTemplate.swift in Sources */,
 				9F118B3720BC581F00C0DC20 /* SimpleCallback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
