@@ -38,9 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
         let tc = UITabBarController()
         tc.viewControllers = [
-            self.heroCoordinator.rootVC,
             self.sampleCoordinator.rootVC,
             self.pinterestCoordinator.rootVC,
+            self.heroCoordinator.rootVC,
         ]
 
         self.window!.rootViewController = tc
