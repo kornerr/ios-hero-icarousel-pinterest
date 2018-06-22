@@ -3,9 +3,9 @@
 
 This is a sample iOS application to check out:
 
-* [Hero][hero]
 * [iCarousel][icarousel]
 * [Pinterest-like UICollectionView layout][layout]
+* [Hero][hero]
 
 # Preview
 
