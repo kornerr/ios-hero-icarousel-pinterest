@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AAE6809BFBE70B7BC8A7760 /* Pods_ThreeLevelAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */; };
+		2EDDF2BE49102D8ACA3344B6 /* Pods_HeroCarouselPinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E086CF30CE71ADAD4C2D8C3 /* Pods_HeroCarouselPinterest.framework */; };
+		6AAE6809BFBE70B7BC8A7760 /* Pods_HeroCarouselPinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C809010E713140412B1B78 /* Pods_HeroCarouselPinterest.framework */; };
 		9F118B1E20BC54D800C0DC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */; };
 		9F118B2520BC54D900C0DC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B2420BC54D900C0DC20 /* Assets.xcassets */; };
 		9F118B2820BC54D900C0DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F118B2620BC54D900C0DC20 /* LaunchScreen.storyboard */; };
@@ -48,13 +49,15 @@
 		9FCD436820D7EDFD002F108D /* CarouselSectionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD436620D7EDFD002F108D /* CarouselSectionsView.xib */; };
 		9FCD436920D7EDFD002F108D /* CarouselSectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD436720D7EDFD002F108D /* CarouselSectionsView.swift */; };
 		9FCD436B20D8025A002F108D /* SectionsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD436A20D8025A002F108D /* SectionsItem.swift */; };
-		ACBD88F6407C37855903CE93 /* Pods_ThreeLevelAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */; };
+		ACBD88F6407C37855903CE93 /* Pods_HeroCarouselPinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B29965987FCCFCF023F960B /* Pods_HeroCarouselPinterest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		64306CE682EEDC8E0A72AEC3 /* Pods-ThreeLevelAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.debug.xcconfig"; sourceTree = "<group>"; };
-		6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeLevelAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F118B1A20BC54D800C0DC20 /* ThreeLevelAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeLevelAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E086CF30CE71ADAD4C2D8C3 /* Pods_HeroCarouselPinterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroCarouselPinterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		327BED05A425C81335F30768 /* Pods-HeroCarouselPinterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroCarouselPinterest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest.release.xcconfig"; sourceTree = "<group>"; };
+		64306CE682EEDC8E0A72AEC3 /* Pods-HeroCarouselPinterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroCarouselPinterest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest.debug.xcconfig"; sourceTree = "<group>"; };
+		6B29965987FCCFCF023F960B /* Pods_HeroCarouselPinterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroCarouselPinterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F118B1A20BC54D800C0DC20 /* HeroCarouselPinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroCarouselPinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F118B1D20BC54D800C0DC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F118B2420BC54D900C0DC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F118B2720BC54D900C0DC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,10 +99,11 @@
 		9FCD436620D7EDFD002F108D /* CarouselSectionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselSectionsView.xib; sourceTree = "<group>"; };
 		9FCD436720D7EDFD002F108D /* CarouselSectionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselSectionsView.swift; sourceTree = "<group>"; };
 		9FCD436A20D8025A002F108D /* SectionsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsItem.swift; sourceTree = "<group>"; };
-		A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeLevelAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B62600F8100D882D0DEA604A /* Pods-ThreeLevelAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.release.xcconfig"; sourceTree = "<group>"; };
-		B7891881C57A9432D3FB91CF /* Pods-ThreeLevelAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.debug.xcconfig"; sourceTree = "<group>"; };
-		E3488EB2AE86B7FD4DF5296E /* Pods-ThreeLevelAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeLevelAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations.release.xcconfig"; sourceTree = "<group>"; };
+		A9C809010E713140412B1B78 /* Pods_HeroCarouselPinterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroCarouselPinterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62600F8100D882D0DEA604A /* Pods-HeroCarouselPinterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroCarouselPinterest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest.release.xcconfig"; sourceTree = "<group>"; };
+		B7891881C57A9432D3FB91CF /* Pods-HeroCarouselPinterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroCarouselPinterest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest.debug.xcconfig"; sourceTree = "<group>"; };
+		E3488EB2AE86B7FD4DF5296E /* Pods-HeroCarouselPinterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroCarouselPinterest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest.release.xcconfig"; sourceTree = "<group>"; };
+		E6207AF6C10A3BE68E35EE19 /* Pods-HeroCarouselPinterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroCarouselPinterest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AAE6809BFBE70B7BC8A7760 /* Pods_ThreeLevelAnimations.framework in Frameworks */,
-				ACBD88F6407C37855903CE93 /* Pods_ThreeLevelAnimations.framework in Frameworks */,
+				6AAE6809BFBE70B7BC8A7760 /* Pods_HeroCarouselPinterest.framework in Frameworks */,
+				ACBD88F6407C37855903CE93 /* Pods_HeroCarouselPinterest.framework in Frameworks */,
+				2EDDF2BE49102D8ACA3344B6 /* Pods_HeroCarouselPinterest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +123,9 @@
 		3D6ABF6057A3703C218C49F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A9C809010E713140412B1B78 /* Pods_ThreeLevelAnimations.framework */,
-				6B29965987FCCFCF023F960B /* Pods_ThreeLevelAnimations.framework */,
+				A9C809010E713140412B1B78 /* Pods_HeroCarouselPinterest.framework */,
+				6B29965987FCCFCF023F960B /* Pods_HeroCarouselPinterest.framework */,
+				1E086CF30CE71ADAD4C2D8C3 /* Pods_HeroCarouselPinterest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,10 +133,12 @@
 		954466DD05C2D92236276AA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				64306CE682EEDC8E0A72AEC3 /* Pods-ThreeLevelAnimations.debug.xcconfig */,
-				B62600F8100D882D0DEA604A /* Pods-ThreeLevelAnimations.release.xcconfig */,
-				B7891881C57A9432D3FB91CF /* Pods-ThreeLevelAnimations.debug.xcconfig */,
-				E3488EB2AE86B7FD4DF5296E /* Pods-ThreeLevelAnimations.release.xcconfig */,
+				64306CE682EEDC8E0A72AEC3 /* Pods-HeroCarouselPinterest.debug.xcconfig */,
+				B62600F8100D882D0DEA604A /* Pods-HeroCarouselPinterest.release.xcconfig */,
+				B7891881C57A9432D3FB91CF /* Pods-HeroCarouselPinterest.debug.xcconfig */,
+				E3488EB2AE86B7FD4DF5296E /* Pods-HeroCarouselPinterest.release.xcconfig */,
+				E6207AF6C10A3BE68E35EE19 /* Pods-HeroCarouselPinterest.debug.xcconfig */,
+				327BED05A425C81335F30768 /* Pods-HeroCarouselPinterest.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -150,7 +158,7 @@
 		9F118B1B20BC54D800C0DC20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F118B1A20BC54D800C0DC20 /* ThreeLevelAnimations.app */,
+				9F118B1A20BC54D800C0DC20 /* HeroCarouselPinterest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,9 +260,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F118B1920BC54D800C0DC20 /* ThreeLevelAnimations */ = {
+		9F118B1920BC54D800C0DC20 /* HeroCarouselPinterest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "ThreeLevelAnimations" */;
+			buildConfigurationList = 9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "HeroCarouselPinterest" */;
 			buildPhases = (
 				EEDFA6D6B0363A8571DABED4 /* [CP] Check Pods Manifest.lock */,
 				9F118B1620BC54D800C0DC20 /* Sources */,
@@ -267,9 +275,9 @@
 			);
 			dependencies = (
 			);
-			name = ThreeLevelAnimations;
-			productName = ThreeLevelAnimations;
-			productReference = 9F118B1A20BC54D800C0DC20 /* ThreeLevelAnimations.app */;
+			name = HeroCarouselPinterest;
+			productName = HeroCarouselPinterest;
+			productReference = 9F118B1A20BC54D800C0DC20 /* HeroCarouselPinterest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -287,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "ThreeLevelAnimations" */;
+			buildConfigurationList = 9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "HeroCarouselPinterest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -300,7 +308,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F118B1920BC54D800C0DC20 /* ThreeLevelAnimations */,
+				9F118B1920BC54D800C0DC20 /* HeroCarouselPinterest */,
 			);
 		};
 /* End PBXProject section */
@@ -342,20 +350,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
-				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CFAF2AD9F1FF6C471F3B24AF /* [CP] Copy Pods Resources */ = {
@@ -370,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeLevelAnimations/Pods-ThreeLevelAnimations-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeroCarouselPinterest/Pods-HeroCarouselPinterest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEDFA6D6B0363A8571DABED4 /* [CP] Check Pods Manifest.lock */ = {
@@ -384,7 +390,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ThreeLevelAnimations-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HeroCarouselPinterest-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -551,7 +557,7 @@
 		};
 		9F118B2D20BC54D900C0DC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7891881C57A9432D3FB91CF /* Pods-ThreeLevelAnimations.debug.xcconfig */;
+			baseConfigurationReference = E6207AF6C10A3BE68E35EE19 /* Pods-HeroCarouselPinterest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -561,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.ThreeLevelAnimations;
+				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.HeroCarouselPinterest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,7 +576,7 @@
 		};
 		9F118B2E20BC54D900C0DC20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3488EB2AE86B7FD4DF5296E /* Pods-ThreeLevelAnimations.release.xcconfig */;
+			baseConfigurationReference = 327BED05A425C81335F30768 /* Pods-HeroCarouselPinterest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -580,7 +586,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.ThreeLevelAnimations;
+				PRODUCT_BUNDLE_IDENTIFIER = su.kornerr.HeroCarouselPinterest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,7 +596,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "ThreeLevelAnimations" */ = {
+		9F118B1520BC54D800C0DC20 /* Build configuration list for PBXProject "HeroCarouselPinterest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F118B2A20BC54D900C0DC20 /* Debug */,
@@ -599,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "ThreeLevelAnimations" */ = {
+		9F118B2C20BC54D900C0DC20 /* Build configuration list for PBXNativeTarget "HeroCarouselPinterest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F118B2D20BC54D900C0DC20 /* Debug */,
